@@ -3,12 +3,12 @@ export const d6 = (quantity) => {
     const rolls = [];
     let roll = 0;
 
-    for (let i = 0; i < quantity; i++)
+    for (let i = 0; i < quantity; i++) {
         roll = Math.ceil(Math.random() * 6)
-        total = total + roll;
+        total += roll;
         rolls.push(roll)
-    
+    }
     return(
-        total, rolls
+        total
     );
 };
